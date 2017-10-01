@@ -22,7 +22,7 @@ Now, visit `localhost:8000` and you would see `Primary`.
 $ docker ps
 CONTAINER ID        IMAGE                                    COMMAND                  CREATED             STATUS              PORTS                    NAMES
 42cc6637255b        nginxkeepaliveddockerdemo_nginx_slave    "/entrypoint.sh"         28 seconds ago      Up 24 seconds       80/tcp                   nginxkeepaliveddockerdemo_nginx_slave_1
-3f39a7e356ce        haproxy:1.7-alpine                        "/docker-entrypoin..."   28 seconds ago      Up 25 seconds       0.0.0.0:8000->6301/tcp   nginxkeepaliveddockerdemo_proxy_1
+3f39a7e356ce        haproxy:1.7-alpine                       "/docker-entrypoin..."   28 seconds ago      Up 25 seconds       0.0.0.0:8000->6301/tcp   nginxkeepaliveddockerdemo_proxy_1
 6151af0d50db        nginxkeepaliveddockerdemo_nginx_master   "/entrypoint.sh"         28 seconds ago      Up 24 seconds       80/tcp                   nginxkeepaliveddockerdemo_nginx_master_1
 ```
 
