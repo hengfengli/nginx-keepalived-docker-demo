@@ -13,8 +13,6 @@ services:
         ipv4_address: 172.20.128.2
     cap_add: 
       - NET_ADMIN
-    environment:
-      KEEPALIVED_OPTS: '-n -l -D -f /etc/keepalived/keepalived.conf --dont-fork --log-console'
   nginx_slave:
     build:
       context: ./
@@ -28,8 +26,6 @@ services:
         ipv4_address: 172.20.128.3
     cap_add: 
         - NET_ADMIN
-    environment:
-      KEEPALIVED_OPTS: '-n -l -D -f /etc/keepalived/keepalived.conf --dont-fork --log-console'
   proxy:
     image: haproxy:1.7-alpine
     ports:
