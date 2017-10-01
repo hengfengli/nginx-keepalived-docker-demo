@@ -6,7 +6,7 @@ This demo is made to simulate a scenario with two running nginx servers, one as 
 There are some limitations in this demo:
 * I run it in a single host. Normally, it would be better to create a scenario with two hosts. 
 * I didn't spend time to map the virtual IP from docker network to the host. Instead, I use a haproxy to do this task. 
-* Running both nginx and keepalived in an Alpine container is not easy. rc-service could not manage keepalived properly. I thought to use supervisor or circus, but they are a bit heavy in space. So I directly run keepalived as a background daemon. However, the drawback is if it fails, it will not restarts (not robust). 
+* Running both nginx and keepalived in an Alpine container is not easy. rc-service could not manage keepalived properly. I thought to use supervisor or circus, but they are a bit heavy in space. So I directly run keepalived as a background daemon. However, the drawback is if it fails, it will not restart (not robust). 
 
 ## How to run
 
