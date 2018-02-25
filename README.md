@@ -32,7 +32,7 @@ Try to pause the master server:
 $ docker pause nginxkeepaliveddockerdemo_nginx_master_1
 ```
 
-Not, visit `localhost:8000` and you should see `Secondary`. 
+Now, visit `localhost:8000` and you should see `Secondary`. 
 
 Recover the master server and pause the slave server: 
 ```bash
